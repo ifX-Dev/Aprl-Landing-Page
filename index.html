@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://drive.google.com/uc?id=1Aq6V7t6-v65t8uiFqe_RoOKMGnHRwVdB"
+    />
+    <title>Apærl</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-nav">
+        <a href="#header" class="lg-link">
+          <img
+            src="https://i.postimg.cc/4Nx5CHPL/Apaerl-Logo-Fit.png"
+            alt=""
+            id="header-img"
+            class="logo"
+          />
+        </a>
+        <button class="mobile-nav-toggle" aria-expanded="false"></button>
+        <nav id="nav-bar">
+          <ul class="primary-navigation" data-visible="false">
+            <li class="nav-link">
+              <a href="#why-us" class="pg-link">Why Us?</a>
+            </li>
+            <li class="nav-link">
+              <a href="#whats-coming" class="pg-link">What's Coming?</a>
+            </li>
+            <li class="nav-link">
+              <a href="#contact-us" class="pg-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-txt">
+        <h1>DARE TO BE YOU</h1>
+        <p>Never Doubt...</p>
+      </div>
+      <svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg>
+    </header>
+    <main>
+      <section id="why-us">
+        <div class="why-us-header">
+          <h1>Why Us?</h1>
+        </div>
+        <div class="b1">
+          <div class="box">
+            <div class="box-txt">
+              <h2>EARTH-FRIENDLY</h2>
+              <p>
+                We aim at offering apparel made from the most ecological
+                materials favoring natural and recycled materials for their
+                exceptional qualities. Our roots run deep (literally) in organic
+                farming, we use sustainable crops, organic farms, and
+                chemical-free dyes to ensure our fibers are supporting Mother
+                Earth from seed to tee.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://drive.google.com/uc?id=12a7YZC0SDSoSuvhH-B6k6XUVOCVtLTps"
+                alt=""
+                class="box-img"
+              />
+            </div>
+          </div>
+          <div class="box box-rev">
+            <div class="box-txt box-txt-rev">
+              <h2>LOCAL MANUFACTURING</h2>
+              <p>
+                All <span>ApÆrl</span> products are manufactured thanks to
+                know-how craftsmen in France or Portugal in order to produce
+                sustainably and promote local industries. All
+                <span>ApÆrl</span> products are made in West Africa, the maximum
+                distance traveled between <span>ApÆrl</span> processors and
+                customers is 1,750 km.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://drive.google.com/uc?id=14hFbK4irsldvyPQWUgdmrsfIFS-NLLZA"
+                alt=""
+                class="box-img"
+              />
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-txt">
+              <h2>AFRO-FUSION</h2>
+              <p>
+                We aim at changing the narrative of fashion by creating everyday
+                functional clothing that celebrate the African History and
+                Heritage. We create value by empowering people to wear a brand
+                that celebrates them, and offer quality clothes that have an
+                intrinsic value.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://drive.google.com/uc?id=1NcmMo75kHwaALGQ7bd9LKB7-X2qIWK3g"
+                alt=""
+                class="box-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="vid-box" onmouseover="anim()" onmouseleave="anim_out()">
+          <video
+            id="video"
+            src="https://drive.google.com/uc?id=120K2ZmQKEUsAALqRz6C5-v8kedRdIdEA"
+            autoplay
+            loop
+          ></video>
+          <div class="vid-txt" id="vid-txt">
+            <h2>WE ARE ApÆrl</h2>
+            <p>Never Doubt...</p>
+          </div>
+        </div>
+      </section>
+      <section id="whats-coming">
+        <h1>What's Coming?</h1>
+        <div class="whats-coming-row-1 whats-coming-row">
+          <div class="whats-coming-img whats-coming-img-1">
+            <a href="#">
+              <img
+                onmouseover="men()"
+                onmouseleave="men_out()"
+                src="https://drive.google.com/uc?id=1mWba4xZKA9B1zuaKpecZJgpwv-8HA9Sr"
+                alt=""
+                class="men-img"
+                id="men-img"
+              />
+              <p id="men" onmouseover="men()" onmouseleave="men_out()">Men</p>
+            </a>
+          </div>
+          <div class="whats-coming-img whats-coming-img-2">
+            <a href="#">
+              <img
+                onmouseover="women()"
+                onmouseleave="women_out()"
+                src="https://drive.google.com/uc?id=1XjE1tsZ6u848p9FQEnYD3zJ8ZBxiwIQI"
+                alt=""
+                id="women-img"
+              />
+              <p id="women" onmouseover="women()" onmouseleave="women_out()">
+                Women
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="whats-coming-row">
+          <div class="whats-coming-img whats-coming-img-3">
+            <a href="#">
+              <img
+                onmouseover="jewellery()"
+                onmouseleave="jewellery_out()"
+                src="https://drive.google.com/uc?id=1L6AMuzr8vKTBErZcqohp90F6AMR3zxej"
+                alt=""
+                id="jewellery-img"
+              />
+              <p
+                id="jewellery"
+                onmouseover="jewellery()"
+                onmouseleave="jewellery_out()"
+              >
+                Jewellery
+              </p>
+            </a>
+          </div>
+          <div class="whats-coming-img whats-coming-img-4">
+            <a href="#">
+              <img
+                onmouseover="afro_fusion()"
+                onmouseleave="afro_fusion_out()"
+                src="https://drive.google.com/uc?id=1MN9laE1xvFRYm-XdNlhPnuM2URs1CRhb"
+                alt=""
+                id="afro-fusion-img"
+              />
+              <p
+                id="afro-fusion"
+                onmouseover="afro_fusion()"
+                onmouseleave="afro_fusion_out()"
+              >
+                Afro-fusion
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h1>Lets Talk</h1>
+      <form action="">
+        <div class="form-control">
+          <input type="text" id="name" placeholder="Name" required />
+        </div>
+        <div class="form-control">
+          <input type="email" id="email" placeholder="E-Mail" required />
+        </div>
+        <div class="form-control">
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Telephone"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+          />
+        </div>
+        <div class="form-control">
+          <textarea
+            id="Message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+        </div>
+      </form>
+      <div class="ftr-icons">
+        <a href="#">
+          <span
+            class="iconify"
+            data-icon="arcticons:instagram"
+            style="color: #d9d9d9; font-size: 2.5vw"
+          ></span>
+        </a>
+        <a href="#">
+          <span
+            class="iconify"
+            data-icon="arcticons:tiktok"
+            style="color: #d9d9d9; font-size: 2.5vw"
+          ></span>
+        </a>
+        <a href="#">
+          <span
+            class="iconify"
+            data-icon="arcticons:pinterest"
+            style="color: #d9d9d9; font-size: 2.5vw"
+          ></span>
+        </a>
+      </div>
+      <p>Ⓒ2022 <span>AprÆl</span>. All rights reserved.</p>
+    </footer>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
