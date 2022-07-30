@@ -5,8 +5,10 @@
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden;
   width: 100vw;
+}
+nav {
+  overflow-x: hidden;
 }
 h1 {
   font-family: "Bebas Neue", cursive;
@@ -384,6 +386,7 @@ footer p {
     background-color: rgba(217, 217, 217, .6);
     backdrop-filter: blur(.2em);
     height: 275px;
+    overflow-x: hidden;
     width: auto;
     padding: 0 50px 0 55px;
     display: flex;
@@ -420,16 +423,15 @@ footer p {
 }
 @media screen and (max-width: 768px) {
   header {
-    background-image: url(https://drive.google.com/uc?id=1GTpmNzXJd8fCyB4KjtutMUJPfgZEHqSX);
-    height: 100vh;
-    position: unset;
+    background-image: url(/media/header-img-mobile.jpg);
+    height: 1150px;
   }
   .header-txt {
     margin: 0;
-    margin-left: -150px;
+    margin-left: -110px;
     left: 50%;
-    bottom: 150px;
-    width: 300px;
+    bottom: 125px;
+    width: 220px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -439,12 +441,11 @@ footer p {
     
   }
   .header-txt h1 {
-    font-size: 150px;
+    font-size: 130px;
     text-align: center;
   }
   .header-txt p {
     font-size: 20px;
-
   }
   .box {
     background-color: #d9d9d9;
@@ -499,7 +500,7 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -30px;
-  bottom: 20px;
+  bottom: 15px;
 }
 .arrows path {
   stroke: #000;
