@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
 }
 nav {
   overflow-x: hidden;
@@ -380,6 +381,9 @@ footer p {
   .pg-link {
     font-size: 17.5px;
   }
+  nav {
+    height: 275px;
+  }
   .primary-navigation {
     right: 0;
     margin-right: 0;
@@ -423,15 +427,15 @@ footer p {
 }
 @media screen and (max-width: 768px) {
   header {
-    background-image: url(/media/header-img-mobile.jpg);
+    background-image: url(https://drive.google.com/uc?id=1GTpmNzXJd8fCyB4KjtutMUJPfgZEHqSX);
     height: 1150px;
   }
   .header-txt {
     margin: 0;
-    margin-left: -110px;
+    margin-left: -100px;
     left: 50%;
-    bottom: 125px;
-    width: 220px;
+    bottom: 115px;
+    width: 200px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -441,7 +445,7 @@ footer p {
     
   }
   .header-txt h1 {
-    font-size: 130px;
+    font-size: 120px;
     text-align: center;
   }
   .header-txt p {
@@ -490,6 +494,24 @@ footer p {
     width: 100%;
   }
 }
+@media screen and (max-width: 425px) {
+  .lg-link {
+    margin-left: 25px;
+  }
+  button {
+    right: 25px;
+  }
+  .primary-navigation {
+    padding: 0 30px 0 50px;
+  }
+  .header-txt {
+    margin-left: -90px;
+    width: 180px;
+  }
+  .header-txt h1 {
+    font-size: 110px;
+  }
+}
 /* scroll down animation  */
 body {
   background: #0b1d2a;
@@ -508,6 +530,9 @@ body {
   stroke-width: 1px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
+}
+@media screen and (max-width: 425px) {
+  
 }
 @keyframes arrow {
   0% {
