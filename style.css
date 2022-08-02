@@ -34,7 +34,7 @@ p {
 }
 
 header {
-  background-image: url(/media/header-img-adj.jpg);
+  background-image: url(/media/header-img.jpg);
   height: 48.8vw;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,11 +158,6 @@ main {
   transition: transform 0.25s ease-out;
 }
 
-.why-us-header h1:hover::after {
-  transform: scaleX(1);
-  transform-origin: center;
-}
-
 .b1 {
   width: 100%;
   display: flex;
@@ -175,6 +170,7 @@ main {
   height: 30vw;
   width: 90%;
   margin-bottom: 100px;
+  border: 1px solid #d9d9d9;
   display: flex;
   justify-content: space-between;
   padding-left: 7vw;
@@ -219,10 +215,11 @@ p span {
 
 .vid-box {
   width: 90%;
-  height: 47.057vw;
+  height: 47.5vw;
   margin-bottom: 100px;
   background-color: #d9d9d9;
   position: relative;
+  border: 1px solid #d9d9d9;
 }
 
 .vid-box video {
@@ -294,7 +291,8 @@ p span {
   cursor: pointer;
 }
 
-.whats-coming-img a, .wc-m a {
+.whats-coming-img a,
+.wc-m a {
   width: 100%;
   position: relative;
   display: flex;
@@ -397,14 +395,15 @@ footer p {
   .box:hover {
     width: 95%;
   }
-}
 
-/* Media Queries */
-@media (orientation: landscape) {
-  .vid-box {
-    max-height: 97.5vh;
+  .why-us-header h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
   }
 }
+
+
+/* Media Queries */
 
 @media screen and (max-width: 1620px) {
   .header-txt {
@@ -470,7 +469,9 @@ footer p {
   }
 
   .primary-navigation {
+    position: absolute;
     right: 0;
+    z-index: 9;
     margin-right: 0;
     background-color: rgba(217, 217, 217, .6);
     backdrop-filter: blur(.2em);
@@ -517,7 +518,7 @@ footer p {
 
 @media screen and (max-width: 768px) {
   header {
-    background-image: url(/media/header-img-mobile-test-1.jpg);
+    background-image: url(/media/header-img-mobile.jpg);
     height: 150vw;
   }
 
@@ -681,18 +682,18 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-  
+
   footer h1 {
     color: #d9d9d9;
     margin-top: 25px;
     font-size: 15vw;
   }
-  
+
   form {
     width: 75%;
     margin-top: 25px;
   }
-  
+
   .form-control input,
   .form-control textarea {
     border: none;
@@ -706,19 +707,19 @@ footer p {
     color: #d9d9d9;
     font-size: 25px;
   }
-  
+
   textarea {
     border: none;
     background-color: transparent;
     resize: none;
     outline: none;
   }
-  
+
   textarea::placeholder {
     position: absolute;
     top: 20%;
   }
-  
+
   ::placeholder {
     color: #d9d9d9;
     font-size: 25px;
