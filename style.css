@@ -34,7 +34,7 @@ p {
 }
 
 header {
-  background-image: url(/media/header-img.jpg);
+  background-image: url(./media/header-img.jpg);
   height: 48.8vw;
   background-position: center;
   background-repeat: no-repeat;
@@ -518,7 +518,7 @@ footer p {
 
 @media screen and (max-width: 768px) {
   header {
-    background-image: url(/media/header-img-mobile.jpg);
+    background-image: url(./media/header-img-mobile.jpg);
     height: 150vw;
   }
 
